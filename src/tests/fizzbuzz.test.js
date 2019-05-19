@@ -13,9 +13,13 @@ test('takes 15 and outputs monkeybars', () => {
 });
 
 test('takes 3 and outputs fizz', () => {
-    expect(fizzbuzz(3)).toBe('fizz');
+    expect(fizzbuzz(3)).toBe(console.log('fizz'));
 });
 
-// test('takes 5 and outputs buzz', () => {
-//     expect(fizzbuzz(5)).toBe('buzz');
-// });
+test('takes 5 and outputs buzz', () => {
+    expect(fizzbuzz(5)).toBe(console.log('buzz'));
+});
+
+test('takes 15 and outputs fizzbuzz', () => {
+    expect(fizzbuzz(15)).toBe(console.log('fizzbuzz'));
+});
