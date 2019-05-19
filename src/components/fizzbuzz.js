@@ -21,9 +21,9 @@ function fizzbuzz(a) {
         else if (i % 5 === 0) {
             console.log('buzz');
         }
-        // else {
-        //     console.log(i);
-        // }
+        else {
+            console.log(i);
+        }
     }
 }
 
