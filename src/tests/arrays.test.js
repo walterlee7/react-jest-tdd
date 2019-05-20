@@ -19,8 +19,8 @@ test('ArrayDrills.sum', () => {
 });
 
 test('ArrayDrills.square', () => {
-    expect(square([0, 1, -1])).toBe([0, 1, 1]);
-    expect(square([2, 3, 4])).toBe([4, 9, 16]);
+    expect(square([0, 1, -1])).toStrictEqual([0, 1, 1]);
+    expect(square([2, 3, 4])).toStrictEqual([4, 9, 16]);
 });
 
 // test('ArrayDrills.add', () => {

@@ -62,8 +62,6 @@ function square(arr) {
     return ret;
 }
 
-square([0, 1, -1]);
-
 /**
  * Takes in two parameters (number and array in that order), returns a new array
  * with values equal to the values in the original array plus the number passed in.
