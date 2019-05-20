@@ -13,15 +13,15 @@ test('ArrayDrills.length', () => {
     expect(length([0, 1, -1])).toBe(3);
 });
 
-// test('ArrayDrills.sum', () => {
-//     t.is(component.sum([0, 1, -1]), 0);
-//     t.is(component.sum([0, 1, 2]), 3);
-// });
+test('ArrayDrills.sum', () => {
+    expect(sum([0, 1, -1])).toBe(0);
+    expect(sum([0, 1, 2])).toBe(3);
+});
 
-// test('ArrayDrills.square', () => {
-//     t.deepEqual(component.square([0, 1, -1]), [0, 1, 1]);
-//     t.deepEqual(component.square([2, 3, 4]), [4, 9, 16]);
-// });
+test('ArrayDrills.square', () => {
+    expect(square([0, 1, -1])).toBe([0, 1, 1]);
+    expect(square([2, 3, 4])).toBe([4, 9, 16]);
+});
 
 // test('ArrayDrills.add', () => {
 //     t.deepEqual(component.add(3, [0, 1, -1]), [3, 4, 2]);

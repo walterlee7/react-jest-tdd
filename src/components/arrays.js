@@ -57,8 +57,12 @@ function square(arr) {
         ret.push(arr[i] * arr[i]);
     }
 
+    console.log(ret);
+
     return ret;
 }
+
+square([0, 1, -1]);
 
 /**
  * Takes in two parameters (number and array in that order), returns a new array
@@ -76,6 +80,7 @@ function add(num, arr) {
 
     return ret;
 }
+
 
 /**
  * Takes in two parameters (number and array in that order), returns true if the
