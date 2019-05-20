@@ -57,8 +57,6 @@ function square(arr) {
         ret.push(arr[i] * arr[i]);
     }
 
-    console.log(ret);
-
     return ret;
 }
 
