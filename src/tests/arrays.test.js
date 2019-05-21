@@ -51,27 +51,27 @@ test('ArrayDrills.union', () => {
     expect(union([0, 1, 2], [2, 6, 6])).toStrictEqual([0, 1, 2, 6]);
 });
 
-// test('ArrayDrills.intersect', () => {
-//     t.deepEqual(component.intersect([0, 1, 2], [2, 6, 6]), [2]);
-// });
+test('ArrayDrills.intersect', () => {
+    expect(intersect([0, 1, 2], [2, 6, 6])).toStrictEqual([2]);
+});
 
-// test('ArrayDrills.difference', () => {
-//     t.deepEqual(component.difference([0, 1, 2], [2, 6, 6]), [0, 1]);
-// });
+test('ArrayDrills.difference', () => {
+    expect(difference([0, 1, 2], [2, 6, 6])).toStrictEqual([0, 1]);
+});
 
-// test('ArrayDrills.defined', () => {
-//     t.deepEqual(component.defined([0, true, null, 'panda', NaN, 100]), [0, true, 'panda', 100]);
-// });
+test('ArrayDrills.defined', () => {
+    expect(defined([0, true, null, 'panda', NaN, 100])).toStrictEqual([0, true, 'panda', 100]);
+});
 
-// test('ArrayDrills.remove', () => {
-//     t.deepEqual(component.remove(0, [0, true, null, 'panda', NaN, 100]), [true, null, 'panda', NaN, 100]);
-//     t.deepEqual(component.remove(0, [0, true, null, 'panda', 0, 100]), [true, null, 'panda', 100]);
-//     t.deepEqual(component.remove(0, [0, 0, 0, 0, 0, 0]), []);
-// });
+test('ArrayDrills.remove', () => {
+    expect(remove(0, [0, true, null, 'panda', NaN, 100])).toStrictEqual([true, null, 'panda', NaN, 100]);
+    expect(remove(0, [0, true, null, 'panda', 0, 100])).toStrictEqual([true, null, 'panda', 100]);
+    expect(remove(0, [0, 0, 0, 0, 0, 0])).toStrictEqual([]);
+});
 
-// test('ArrayDrills.flatten', () => {
-//     t.deepEqual(component.flatten([1, 4, [2], [['panda'], [[true]]]]), [1, 4, 2, 'panda', true]);
-// });
+test('ArrayDrills.flatten', () => {
+    expect(flatten([1, 4, [2], [['panda'], [[true]]]])).toStrictEqual([1, 4, 2, 'panda', true]);
+});
 
 test('ArrayDrills.findMissingNumber', () => {
     expect(findMissingNumber([1, 2, 3, 4, 6, 7, 8, 9, 10])).toBe(5);
