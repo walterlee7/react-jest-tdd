@@ -4,47 +4,47 @@ test('Number.identity', () => {
     expect(identity(2)).toStrictEqual(2);
 });
 
-// test('Number.add', () => {
-//     t.is(component.add(2, 3), 5);
-// });
+test('Number.add', () => {
+    expect(add(2, 3)).toBe(5);
+});
 
-// test('Number.subtract', () => {
-//     t.is(component.subtract(2, 3), -1);
-// });
+test('Number.subtract', () => {
+    expect(subtract(2, 3)).toBe(-1);
+});
 
-// test('Number.multiply', () => {
-//     t.is(component.multiply(2, 3), 6);
-// });
+test('Number.multiply', () => {
+    expect(multiply(2, 3)).toBe(6);
+});
 
-// test('Number.divide', () => {
-//     t.is(component.divide(2, 3), 2 / 3);
-// });
+test('Number.divide', () => {
+    expect(divide(2, 3)).toBe(2 / 3);
+});
 
-// test('Number.mod', () => {
-//     t.is(component.mod(2, 3), 2 % 3);
-// });
+test('Number.mod', () => {
+    expect(mod(2, 3)).toBe(2 % 3);
+});
 
-// test('Number.isGreater', () => {
-//     t.false(component.isGreater(2, 3));
-//     t.true(component.isGreater(3, 2));
-// });
+test('Number.isGreater', () => {
+    expect(isGreater(2, 3)).toBe(false);
+    expect(isGreater(3, 2)).toBe(true);
+});
 
-// test('Number.isLess', () => {
-//     t.true(component.isLess(2, 3));
-//     t.false(component.isLess(3, 2));
-// });
+test('Number.isLess', () => {
+    expect(isLess(2, 3)).toBe(true);
+    expect(isLess(3, 2)).toBe(false);
+});
 
-// test('Number.isEven', () => {
-//     t.true(component.isEven(20));
-//     t.false(component.isEven(23));
-// });
+test('Number.isEven', () => {
+    expect(isEven(20)).toBe(true);
+    expect(isEven(23)).toBe(false);
+});
 
-// test('Number.isOdd', () => {
-//     t.false(component.isOdd(20));
-//     t.true(component.isOdd(23));
-// });
+test('Number.isOdd', () => {
+    expect(isOdd(20)).toBe(false);
+    expect(isOdd(23)).toBe(true);
+});
 
-// test('Number.isDivisibleBy', () => {
-//     t.true(component.isDivisibleBy(20, 4));
-//     t.false(component.isDivisibleBy(21, 4));
-// });
+test('Number.isDivisibleBy', () => {
+    expect(isDivisibleBy(20, 4)).toBe(true);
+    expect(isDivisibleBy(21, 4)).toBe(false);
+});
