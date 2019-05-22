@@ -303,4 +303,4 @@ function findMissingNumber(arr) {
 }
 
 
-module.exports = { identity, value, length, sum, square, add, contains, combine, reverse, sort, union, intersect, difference, defined, remove, flatten, findMissingNumber }
+module.exports = { identity, value, length, sum, square, add, contains, combine, reverse, sort, union, intersect, difference, defined, remove, flatten, findMissingNumber };

@@ -83,4 +83,4 @@ function isDivisibleBy(a, b) {
     return a % b === 0;
 }
 
-module.exports = { identity, add, subtract, multiply, divide, mod, isGreater, isLess, isEven, isOdd, isDivisibleBy }
+module.exports = { identity, add, subtract, multiply, divide, mod, isGreater, isLess, isEven, isOdd, isDivisibleBy };
