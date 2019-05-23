@@ -18,7 +18,6 @@ function identity(obj) {
  * @example value('name', { name: 'John', age: 57 }) -> 'John'
  */
 function value(str, obj) {
-
     return obj[str];
 }
 
@@ -131,7 +130,7 @@ function omit(str, obj) {
 function omitAll(strArr, obj) {
 
     for (let i = 0; i < strArr.length; i++) {
-        this.omit(strArr[i], obj);
+        omit(strArr[i], obj);
     }
 
     return obj;
