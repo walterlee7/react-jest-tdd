@@ -30,4 +30,24 @@ function fizzbuzz(a) {
 // monkeybars(3);
 // fizzbuzz(3);
 
+
+
+function bubbles() {
+    for (let i = 1; i < 50; i++) {
+        let output = '';
+        if (i % 3 === 0) {
+            output += "fizz";
+        }
+        else if (i % 5 === 0) {
+            output += "buzz";
+        }
+        else {
+            output = i;
+        }
+        console.log(output);
+    }
+}
+
+bubbles();
+
 module.exports = { fizzbuzz, monkeybars };
